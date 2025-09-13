@@ -9,13 +9,13 @@ int main(int argc, char** argv) {
     Hazel::Log::Init();
 //    Hazel::Log::GetCoreLogger()->warn("Initialized Log!");
 //    Hazel::Log::GetClientLogger()->info("Hello!");
-    HZ_CORE_WARN("Initialed Log!");
+    HZ_CORE_WARN("Initialed Log!!!!");
     int a = 5;
     HZ_INFO("Hello! Var={0}", a);
 
-auto app = Hazel::CreateApplication();
-app->Run();
-delete app;
+    auto app = Hazel::CreateApplication();
+    app->Run();
+    delete app;
 }
 //#endif
 #endif //SANBOX_ENTRYPOINT_H
