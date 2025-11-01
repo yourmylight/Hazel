@@ -1,7 +1,10 @@
 # Directories
 .vs/
-bin/
 bin-int/
+
+# 明确忽略根目录和子目录下的 bin/，除了 vendor/bin/
+bin/
+!vendor/bin/
 
 # Files
 *.user
